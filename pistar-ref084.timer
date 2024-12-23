@@ -1,0 +1,10 @@
+[Unit]
+Description=REF084_A connection.
+
+[Timer]
+OnCalendar=15:00:00 Europe/Paris
+Unit=pistar-link@ref084_a.service
+
+[Install]
+WantedBy=timers.target
+

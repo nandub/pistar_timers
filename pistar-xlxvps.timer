@@ -1,0 +1,10 @@
+[Unit]
+Description=Connect to XLXVPS_C on Satruday at 15:55 Toronto time.
+
+[Timer]
+OnCalendar=Sat 15:55:00 America/Toronto
+Unit=pistar-link@XLXVPS_C.service
+
+[Install]
+WantedBy=timers.target
+
