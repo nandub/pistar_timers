@@ -2,7 +2,7 @@
 Description=XLX050 Charlie connection.
 
 [Timer]
-OnCalendar=15:00:00 America/Los_Angeles
+OnCalendar=15:00
 Unit=pistar-link@xlx050_c.service
 
 [Install]
