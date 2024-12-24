@@ -4,5 +4,5 @@ Description=Connect pistar to %i
 [Service]
 ExecStartPre=/bin/systemctl is-active --quiet mmdvmhost.service
 ExecStartPre=/bin/systemctl is-active --quiet ircddbgateway.service
-ExecStart=/usr/local/sbin/pistar-link %i
-
+# ExecStart=/usr/local/sbin/pistar-link %i
+ExecStart=/root/connect.sh %i
