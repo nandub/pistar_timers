@@ -3,5 +3,5 @@ Description=Connect pistar to %i
 
 [Service]
 ExecStartPre=/bin/systemctl is-active --quiet mmdvmhost.service
-ExecStartPre=/bin/systemctl is-active --quiet ircddbgateway.service
+ExecStartPre=/bin/systemctl is-active --quiet ysfgateway.service
 ExecStart=/root/ysfconnect.sh %i
