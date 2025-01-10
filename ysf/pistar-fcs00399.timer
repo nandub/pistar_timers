@@ -1,0 +1,10 @@
+[Unit]
+Description=Echo FCS00399 connection.
+
+[Timer]
+OnCalendar=17:00:00 America/Chicago
+Unit=pistar-ysflink@fcs00399.service
+
+[Install]
+WantedBy=timers.target
+

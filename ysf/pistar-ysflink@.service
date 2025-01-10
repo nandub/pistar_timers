@@ -1,0 +1,7 @@
+[Unit]
+Description=Connect pistar to %i 
+
+[Service]
+ExecStartPre=/bin/systemctl is-active --quiet mmdvmhost.service
+ExecStartPre=/bin/systemctl is-active --quiet ircddbgateway.service
+ExecStart=/root/ysfconnect.sh %i

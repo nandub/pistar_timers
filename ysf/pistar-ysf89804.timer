@@ -1,0 +1,10 @@
+[Unit]
+Description=AmericaLink YSF89804 connection.
+
+[Timer]
+OnCalendar=15:00:00 America/Chicago
+Unit=pistar-ysflink@ysf89804.service
+
+[Install]
+WantedBy=timers.target
+

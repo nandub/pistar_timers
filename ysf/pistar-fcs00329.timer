@@ -1,0 +1,10 @@
+[Unit]
+Description=DWARN FCS00329 connection.
+
+[Timer]
+OnCalendar=12:00:00 America/Chicago
+Unit=pistar-ysflink@fcs00329.service
+
+[Install]
+WantedBy=timers.target
+
