@@ -1,5 +1,5 @@
 [Unit]
-Description=AmericaLink YSF89804 connection.
+Description=Connect to AmericaLink YSF89804 at 15:00 America/Chicago time.
 
 [Timer]
 OnCalendar=15:00:00 America/Chicago

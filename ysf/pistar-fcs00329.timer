@@ -1,5 +1,5 @@
 [Unit]
-Description=DWARN FCS00329 connection.
+Description=Connect to DWARN FCS00329 at 12:00 America/Chicago time.
 
 [Timer]
 OnCalendar=12:00:00 America/Chicago

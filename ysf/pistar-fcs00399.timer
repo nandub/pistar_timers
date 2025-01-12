@@ -1,5 +1,5 @@
 [Unit]
-Description=Echo FCS00399 connection.
+Description=Connect to ECHO FCS00399 at 17:00 America/Chicago time.
 
 [Timer]
 OnCalendar=17:00:00 America/Chicago
