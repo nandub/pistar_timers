@@ -1,0 +1,10 @@
+[Unit]
+Description=Connect to US-America-Link YSF32592 at 15:00 America/Chicago time.
+
+[Timer]
+OnCalendar=15:00:00 America/Chicago
+Unit=pistar-ysflink@ysf032592.service
+
+[Install]
+WantedBy=timers.target
+
