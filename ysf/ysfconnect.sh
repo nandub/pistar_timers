@@ -26,9 +26,8 @@ last_activity_stamp=$(date -d "$last_activity" +%s 2>/dev/null || echo 0)
 inactivity_duration=$(( ${last_activity_stamp} - $(date +%s) ))
 
 # Check if inactivity duration exceeds threshold
-if [ "$inactivity_duration" -ge "$INACTIVITY_THRESHOLD" ]; then
+if [ -z "${last_activity}" -o "$inactivity_duration" -ge "$INACTIVITY_THRESHOLD" ]; then
   # Switch reflector if inactive
-  /usr/local/sbin/pistar-ysflink
   /usr/local/sbin/pistar-ysflink $REFLECTOR
   echo "$(date): Switched to $REFLECTOR due to last activity $last_activity"
 else
